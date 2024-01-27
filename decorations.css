@@ -1,0 +1,71 @@
+.tab-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: #684004;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tab:hover {
+    background-color: #a77833;
+  }
+
+  .aibody {
+    margin: 0;
+    padding: 0;
+    background-image: url('book.jpg'); /* Replace 'path/to/blank-book-image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background image */
+    font-family: 'Arial', sans-serif;
+    height: 100vh; /* Set body height to full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #fff; /* Set text color F5F5DC*/
+    /*text-shadow: 0 0 2px #FFFFFF, 0 0 2px #FFFFFF;*/
+}
+
+.text-box {
+    background-color: rgba(83, 67, 38, 0.9); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.centered {
+    text-align: center;
+}
+
+.aitext {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
