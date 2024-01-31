@@ -165,6 +165,7 @@
     background-color: rgba(83, 67, 38, 0.9); /* Semi-transparent black background */
     padding: 20px;
     border-radius: 10px; /* Add rounded corners */
+    margin-top: 85%;
 }
 
 .text-box-blue {
@@ -180,7 +181,7 @@
 }
 
 .text-box-maroon {
-  margin-top: 45%;
+  margin-top: 100%;
     background-color: rgba(128, 0, 0, 0.9); /* Semi-transparent black background */
     padding: 20px;
     border-radius: 10px; /* Add rounded corners */
