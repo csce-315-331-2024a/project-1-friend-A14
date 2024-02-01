@@ -166,6 +166,7 @@
     padding: 20px;
     border-radius: 10px; /* Add rounded corners */
     margin-top: 85%;
+    color: wheat;
 }
 
 .text-box-blue {
@@ -178,28 +179,90 @@
     background-color: rgba(85, 247, 56, 0.9); /* Semi-transparent black background */
     padding: 20px;
     border-radius: 10px; /* Add rounded corners */
+    max-height: 60%;
 }
 
 .text-box-maroon {
   margin-top: 100%;
-    background-color: rgba(128, 0, 0, 0.9); /* Semi-transparent black background */
+    background-color: rgba(161, 0, 0, 0.9); /* Semi-transparent black background */
     padding: 20px;
     border-radius: 10px; /* Add rounded corners */
 }
 
 .text-box-bluetoo {
+  margin-top: 30%;
     background-color: rgba(129, 177, 233, 0.9); /* Semi-transparent black background */
     padding: 20px;
     border-radius: 10px; /* Add rounded corners */
+    height: 100%;
+    width: auto;
 }
 .centered {
     text-align: center;
+}
+.lefty{
+  text-align: left;
 }
 
 .aitext {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.whitetext{
+  color: white;
+}
+
+#home{
+  background-color:rgb(41, 73, 121);
+}
+
+#profpic{
+  max-width: 18%;
+  max-height: 14%; 
+  position:absolute; 
+  top: 23%; 
+  right: 8;
+}
+
+#qbar{
+  background-color: rgb(228, 143, 143);
+}
+
+#resume{
+  max-width: 85%; 
+  max-height: 80%; 
+  position: static; 
+  top:50%; 
+  right: 50%; 
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pbar{
+  background-color: rgb(0, 75, 0);
+}
+
+#ptitle{
+  text-align: center; 
+  color: rgba(1, 70, 7, 0.863);
+}
+
+#construction{
+  max-width: 80%; 
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sbar{
+  background-color:darkblue;
+}
+
+#stitle{
+  color: #00008b; 
+  text-align: center;
+}
 
 h1 {
     font-size: 2em;
