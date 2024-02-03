@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="decorations.css">
+        <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="professional.css">
     </head>
     <body class="ibody">
         <div class="tab-bar" id="home">
@@ -12,10 +12,11 @@
             <a href="AI.html" class="itab">AI</a>
         </div>
         
-        <div class="content">
+        <div class="content2">
             <div class="text-box-bluetoo" >
-                <img src="me.jpg" id="profpic">
-                <h1><strong><em>Howdy!</em></strong></h1>
+                <div class="column">
+                    <div class="left-box">
+                <h1><strong><em>Howdy!</em></strong> <button onclick="toggleStyleSheet()" type="button">Toggle Style</button></h1>
                 <h3>About Me:</h3>
                 <p style="float: left;">My name is David Johnson and I am from <a href="https://www.cibolotx.gov">Cibolo Texas</a>, near San Antonio. I am a
                     junior computer engineer at <a href="https://www.tamu.edu/index.html"> Texas A&M University</a> and I am minoring in cyber security and math. Some
@@ -37,8 +38,15 @@
                  work with somebody to advise against mistakes is how I thrive. My education at Texas A&M speaks of my
                  capability, if nothing else, my ability to be trained and work in a high level setting. I look forward
                  to being able to work in a close team that supports each other and tackles problems together.</p>
+                </div>
+                </div>
+                <div class="right-box">
+                <img src="me.jpg" id="profpic">
             </div>
+                </div>
+            
         </div>
         <script src="scripts.js"></script>
+        <script src="switch.js"></script>
     </body>
 </html>

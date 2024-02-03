@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Projects</title>
-        <link rel="stylesheet" type="text/css" href="decorations.css">
+        <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="professional.css">
     </head>
     <body class="Pbody">
         <div class="tab-bar" id="pbar">
@@ -14,36 +14,41 @@
         
         <div class="content">
             <div class="text-box-green">
-                <div>
-                <span id="ptitle"><h1><strong><u><a href="https://github.com/friend-A14">Projects</a></u></strong></h1></span>
+                <span class="centered"><h1><strong><u><a href="https://github.com/friend-A14">Projects</a></u></strong> <button onclick="toggleStyleSheet()" type="button">Toggle Style</button></h1></span>
                 <ul>
-                    <li>Seam Carver</li>
-                    <ul>
-                        <li>Created code that would downsize a jpg by cutting out the least important pixels</li>
-                        <li>Strong emphasis on nested arrays in this project</li>
-                    </ul>
-                    <li>Terminal Dungeon</li>
-                    <ul>
-                        <li>Coded the logic for a dungeon game run through the terminal</li>
-                        <li>Emphasis on logic and arrays for this project</li>
-                    </ul>
-                    <li>Light Alarm</li>
-                    <ul>
-                        <li>Created a basic alarm system that would triger a LED if a light beam was broken</li>
-                        <li>Made with a breadboard the focus wason opamps</li>
-                    </ul>
-                    <li>CPU</li>
-                    <ul>
-                        <li>Used <a href="https://www.verilog.com">Verilog</a> to combine multiple modules to simulate a bacis cpu</li>
-                        <li>Focused on logic and control paths</li>
-                    </ul>
+                    <li>
+                        <p>Seam Carver</p>
+                        <ul>
+                            <li>Created code that would downsize a jpg by cutting out the least important pixels</li>
+                            <li>Strong emphasis on nested arrays in this project</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Terminal Dungeon</p>
+                        <ul>
+                            <li>Coded the logic for a dungeon game run through the terminal</li>
+                            <li>Emphasis on logic and arrays for this project</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Light Alarm</p>
+                        <ul>
+                            <li>Created a basic alarm system that would triger a LED if a light beam was broken</li>
+                            <li>Made with a breadboard the focus was on opamps</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>CPU</p>
+                        <ul>
+                            <li>Used <a href="https://www.verilog.com">Verilog</a> to combine multiple modules to simulate a bacis cpu</li>
+                            <li>Focused on logic and control paths</li>
+                        </ul>
+                    </li>
                 </ul>
-                </div>
-                <div>
-                <img src="Under-Construction-Sign.png" id="construction">
+                <img src="Under-Construction-Sign.png" id="construction" alt="Under Construction">
             </div>
         </div>
-    </div>
         <script src="scripts.js"></script>
+        <script src="switch.js"></script>
     </body>
-</html>
+    </html>

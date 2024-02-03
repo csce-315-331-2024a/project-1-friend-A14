@@ -6,9 +6,9 @@
     background-color: #684004;
     z-index: 1000;
   }
-
+  
   button {
-    background-color: black;
+    background-color: #5d4ea8;
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -17,10 +17,11 @@
     cursor: pointer;
     }
 
-  button:hover {
-      background-color: lightslategray; /* Darker green on hover */
-  }
-  
+button:hover {
+    background-color: #9247e3; /* Darker green on hover */
+}
+
+
   .Atab {
     flex: 1;
     padding: 15px;
@@ -39,52 +40,57 @@
     flex: 1;
     padding: 15px;
     text-align: center;
-    color:#89CFF0;
+    color:#effcff;
+    background-color: #152238;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
   .Stab:hover {
-    background-color: #0d74c9;
+    background-color: #506788;
   }
 
   .Ptab {
     flex: 1;
     padding: 15px;
     text-align: center;
-    color:#15ff00;
+    color:#effcff;
+    background-color: #152238;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
   .Ptab:hover {
-    background-color: #31be49;
+    background-color: #506788;
   }
 
   .Qtab {
     flex: 1;
     padding: 15px;
     text-align: center;
-    color:#000000;
+    color:#effcff;
+    background-color: #152238;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
   .Qtab:hover {
-    background-color: #d32626;
+    background-color: #506788;
   }
 
   .itab {
     flex: 1;
     padding: 15px;
     text-align: center;
-    color:#b7e4f1;
+    color:#effcff;
+    background-color: #152238;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s;
+    
   }
   
   .itab:hover {
@@ -107,9 +113,9 @@
 }   
 
 .servicebody {
+    background-color:rgba(63, 211, 252, 0.7);
     margin: 0;
     padding: 0;
-    background-image: url('Sunny.jpg'); /* Replace 'path/to/blank-book-image.jpg' with the actual path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,9 +127,9 @@
     align-items: center;
 } 
 .Pbody {
+    background-color:rgba(38, 192, 235, 0.7);
     margin: 0;
     padding: 0;
-    background-image: url('binary.jpg'); /* Replace 'path/to/blank-book-image.jpg' with the actual path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -136,9 +142,12 @@
 } 
 
 .Qbody {
+    background-color:rgba(21, 172, 214, 0.7);
+    border-left: 10px solid #152238;
+    border-right: 10px solid #152238;
+    border-bottom: none;
     margin: 0;
     padding: 0;
-    background-image: url('zach.jpg'); /* Replace 'path/to/blank-book-image.jpg' with the actual path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,10 +159,33 @@
     align-items: center;
 } 
 
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15px; /* Adjust the width of the border */
+    height: 100%;
+    background-color: #152238; /* Adjust the color of the border */
+    z-index: 9999; /* Ensure the border is above other elements */
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px; /* Adjust the width of the border */
+    height: 100%;
+    background-color: #152238; /* Adjust the color of the border */
+    z-index: 9999; /* Ensure the border is above other elements */
+}
+
+
 .ibody {
+    background-color:rgba(7, 156, 197, 0.7);
     margin: 0;
     padding: 0;
-    background-image: url('rain.jpg'); /* Replace 'path/to/blank-book-image.jpg' with the actual path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,15 +206,21 @@
     /*color: #fff; /* Set text color F5F5DC*/
     /*text-shadow: 0 0 2px #FFFFFF, 0 0 2px #FFFFFF;*/
 }
-
-.content2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: left;
+.content2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-
+.left-box{
+    flex: 1;
+      padding: 30px;
+      box-sizing: border-box;
+}
+.right-box{
+    flex: 1;
+      box-sizing: border-box;
+}
 
 .text-box-brown {
     background-color: rgba(83, 67, 38, 0.9); /* Semi-transparent black background */
@@ -192,67 +230,88 @@
     color: wheat;
 }
 
-.text-box-bluep2 {
-    background-color: rgba(173, 227, 248, 0.9); /* Semi-transparent black background */
-    padding: 20px;
-    border-radius: 10px; /* Add rounded corners */
+.text-box-blue {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    gap: 20%; /* Adjust the gap between columns */
+    text-align: left; /* Center text within the grid */
+}
+
+.text-box-blue div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically within each column */
+}
+
+.text-box-blue h1,
+.text-box-blue p {
+    margin: 0; /* Remove default margin for better alignment */
 }
 
 .text-box-green {
-    background-color: rgba(85, 247, 56, 0.9); /* Semi-transparent black background */
+    margin-top: 25%;
     padding: 20px;
-    border-radius: 10px; /* Add rounded corners */
-    margin-top: 30%;
+    border-radius: 10px;
+}
+
+.text-box-green ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    gap: 20px; /* Adjust the gap between items */
+    margin-bottom: 20px; /* Adjust the bottom margin between projects */
+}
+
+.text-box-green li {
+    position: relative;
+    list-style: none; /* Remove default list-style */
+    margin-bottom: 10px; /* Adjust the bottom margin between project details */
+}
+
+.text-box-green ul ul {
+    display: block;
+    margin-left: 20px;
 }
 
 .text-box-maroon {
-  margin-top: 100%;
-    background-color: rgba(161, 0, 0, 0.9); /* Semi-transparent black background */
+    margin-top: 100%;
     padding: 20px;
-    border-radius: 10px; /* Add rounded corners */
+    border-radius: 10px;
 }
 
 .text-box-bluetoo {
-  margin-top: 30%;
-    background-color: rgba(129, 177, 233, 0.9); /* Semi-transparent black background */
-    padding: 20px;
-    border-radius: 10px; /* Add rounded corners */
-    height: 100%;
-    width: auto;
+    display: flex;
+        align-items: flex-start; /* Align text to the top */
+        width: 50%;
+        padding: 20px;
+        flex: 1;
+}
+
+.column{
+    flex-direction: column;
+    max-width: 60%;
 }
 .centered {
     text-align: center;
 }
 .lefty{
-  text-align: left;
+    text-align: left;
 }
 
 .aitext {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.whitetext{
-  color: white;
-}
-
-#home{
-  background-color:rgb(41, 73, 121);
-}
 
 #profpic{
-  max-width: 18%;
-  max-height: 14%; 
-  position:absolute; 
-  top: 23%; 
-  right: 8;
+    max-width: 60%; /* Make sure the image doesn't exceed its container */
+    height: auto;
+    margin-top: 20%;
+    margin-left: 25%;
 }
 
-#qbar{
-  background-color: rgb(228, 143, 143);
-}
 
 #resume{
-  max-width: 85%; 
+    max-width: 85%; 
   max-height: 80%; 
   position: static; 
   top:50%; 
@@ -262,29 +321,20 @@
   margin-right: auto;
 }
 
-#pbar{
-  background-color: rgb(0, 75, 0);
-}
 
 #ptitle{
-  text-align: center; 
-  color: rgba(1, 70, 7, 0.863);
+    text-align: center; 
 }
 
 #construction{
-  max-width: 80%; 
-  display: block; 
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#sbar{
-  background-color:darkblue;
+    max-width: 80%; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #stitle{
-  color: #00008b; 
-  text-align: center;
+    text-align: center;
 }
 
 h1 {

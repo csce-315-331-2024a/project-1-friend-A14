@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Qualifications</title>
-        <link rel="stylesheet" type="text/css" href="decorations.css">
+        <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="professional.css">
     </head>
     <body class="Qbody">
         <div class="tab-bar" id="qbar">
@@ -16,7 +16,7 @@
         <div class="content">
             <div class="whitetext">
             <div class="text-box-maroon">
-                <h1><strong><u>Qualifications</u></strong></h1>
+                <span class="centered"><h1><strong><u>Qualifications</u></strong> <button onclick="toggleStyleSheet()" type="button">Toggle Style</button></h1></span>
                 <h3>Interests</h3>
                 <p>As a computer engineer, I am educated in both hardware and software. I am partial to the coding aspect and plan on pursuing it in my career.
                     I am specializing in cyber security as well as image processing & graphics. I have a focus on backend development and logic, 
@@ -51,5 +51,6 @@
             </div>
         </div>
         <script src="scripts.js"></script>
+        <script src="switch.js"></script>
     </body>
 </html>
